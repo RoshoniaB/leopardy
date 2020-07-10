@@ -1,0 +1,41 @@
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 70vmin;
+    width: 100vmin;
+    border: #1a6cca 4px solid;
+    background-color: rgba(54, 108, 189, 0.575)
+    
+}
+
+.square {
+    border: 2px solid;
+    margin-bottom: -1px;
+    margin-right: -1px;
+     display: block;
+    text-align: center; 
+    font-size: 75px;
+    align-items: center;
+    
+    
+}
+
+.greeting {
+    text-align: center;
+}
+ 
+.choices {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 7vmin;
+    width: 100vmin;
+    border: #1a6cca 4px solid;
+}
+
+.category {
+    border: 2px solid;
+    margin-bottom: -1px;
+    margin-right: -1px;
+     display: block;
+    text-align: center;
+}
