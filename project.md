@@ -31,3 +31,26 @@ My app is called Leopardy. It's a game app for players who want to play a trivia
 - As a player, I would like a victory animation when I win the game, so that I feel good about my victory!
 - As a player I would like to have a timer so none of the players could take too long.
 - As a player I would like to hear a song when someone is taking a long time.
+
+## Ideas
+
+# User Experience
+* Song begins to play 
+" Welcome to Leopardy!"  * Anouncer says this *
+* the heading pops up first
+* then zooms to the top of the screen
+
+* the categories are next to fill in from left to right in a wave
+* at the same time the timer and teams fill in.
+- team 1 on left, team 2 on right.
+- option to be able to name the teams
+
+* click a number to get started 
+- at this time the timer will begin 
+- at the end og the end of the time the answer will appear.
+- a question will pop up "did they get the answer right? yes? no?"
+- points will be added accordingly.
+
+* the box will darken after a question has been selected.
+* at the end the winner will get a gif of the 'but im not a rapper' guy
+- with the team name at the bottom.
