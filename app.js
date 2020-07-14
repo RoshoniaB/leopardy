@@ -6,19 +6,62 @@ const square = document.querySelectorAll('.square');
 square.forEach(square =>{
     square.addEventListener('click', handleClick);
 
-});
 
+});
+        //   let button = document.createElement('button');
+        //     let moneybtn = document.querySelectorAll('.square');
+        //     console.log(moneybtn);
+        //     moneybtn.appendChild(button);
+        //     document.body.appendChild(button);
+        //     button.innerHTML = 'hello';
 // function switchTeam(){
 //     team1 = team1 === 'X' ? 'O' : 'X';
 // };
 
+
+// filter out categories for the top/////////////////////////
+
+// function handleClick(event) {
+//     fetch('http://www.jservice.io/api/clues?categories?count=100')
+// 			.then((res) => {
+// 				return res.json();
+// 			})
+// 			.then((res) => {
+//                 console.log(res[0].category.ti);
+
+//             let button = document.createElement('button');
+            
+//             let moneybtn = document.querySelector('.square');
+//             console.log(moneybtn);
+//             moneybtn.appendChild(button);
+//             document.body.appendChild(button);
+
+//             button.innerHTML = 'hello';
+
+// 			})
+// 			.catch((error) => {
+// 				console.log(error);
+// 			});
+    
+// };
+////////////////////////////////////////////////////////////
+
+
+      
+// randomizing the output is good but repeating the numbers is a problem. 
+
 function handleClick(event) {
-    fetch('http://www.jservice.io/api/categories?count=100')
+    fetch('http://www.jservice.io/api/clues?categories?count=100')
 			.then((res) => {
 				return res.json();
 			})
 			.then((res) => {
-                console.log(res);
+                console.log(res[Math.floor(Math.random()*100)].category);
+
+
+
+            
+
 			})
 			.catch((error) => {
 				console.log(error);
@@ -26,15 +69,17 @@ function handleClick(event) {
     
 };
 
-const category = document.querySelectorAll('.category');
+// const category = document.querySelectorAll('.category');
+// category.forEach(category => {
+//     category.addEventListener('click', )
+// })
 
-function addOption(event) {
-	const moneybtn = document.querySelectorAll('.square');
 
-	const button = document.createElement('BUTTON');
-	const text = document.createTextNode('BUTTON');
+    
 
-	button.appendChild(text);
-	moneybtn.appendChild(button);
-	console.log(event.target.div);
-}
+
+
+
+// category.forEach(category => {
+//     category.addEventListener('click', )
+// })
