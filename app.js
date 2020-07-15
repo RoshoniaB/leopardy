@@ -1,76 +1,38 @@
 let startScore = 0
-const max = 100
+const max = 100 
+const page = document.querySelector('div');
+page.addEventListener('click', createBtns)
 
+let scoreEle = document.querySelectorAll('.score')
+scoreEle.textContent = startScore
 
+//////////////////cant add a button to each div///////////////////
 
-
-// const category = document.querySelectorAll('.category');
-// category.forEach(category => {
-//     category.addEventListener('click', handleClickCat )
-// })
+function createBtns() {
     
-// function handleClickCat(event) {
-//     fetch('http://www.jservice.io/api/categories?count=100')
-// 			.then((res) => {
-// 				return res.json();
-// 			})
-// 			.then((res) => {
-// //////////////////////////Randomized the categories///////////////////////
-//   /////////////////////////dont know how to print out in boxes/////////
-            
-//                 let userinput = 6
-                
-//                 for (let i=0; i<userinput; i++){
-//                     // console.log(res[Math.floor(Math.random()*Math.floor(max))])
-//                     category.innerText = res[Math.floor(Math.random()*Math.floor(max))];
-//                 }
-// 			})
-// 			.catch((error) => {
-// 				console.log(error);
-// 			});
-    
-// };
-/////////////////////////////////////////////////////////////////
+	let yesBtn = document.createElement('button');
+    let noBtn = document.createElement('button');
+    yesBtn.className = 'choices'
+    noBtn.className = 'choices'
+    // yesBtn.style='display:none;'
+    // noBtn.style='display:none;'
+	yesBtn.appendChild(document.createTextNode('Yes!'));
+    noBtn.appendChild(document.createTextNode('No...'));
+		page.appendChild(yesBtn);
+            page.appendChild(noBtn);	
+            scoreEle.textContent = ++startScore
+//    for(let i=0; i<page;i++){
+//         console.log(page[i])
+//        list = updatediv(page[i].innerHTML);
+//        page[i].innerHTML = list
+//     }   
+}    
 
-
-
-// function createBtns() {
-
-// 	let yesBtn = document.createElement('button');
-//     let noBtn = document.createElement('button');
-//     yesBtn.className = 'choices'
-//     noBtn.className = 'choices'
-// 	yesBtn.appendChild(document.createTextNode('Yes!'));
-//     noBtn.appendChild(document.createTextNode('No...'));
-//     let page = document.querySelector('.square');
-   
-// 	page.appendChild(yesBtn);
-//     page.appendChild(noBtn);
-//     // let x = document.querySelector('choices').addEventListener('click', myfunc)
-// 	// function myfunc(){
-//     //     if (x.style.display === 'none'){
-//     //         x.style.display = 'block'
-//     //     }else {
-//     //         x.style.display = 'none'
-//     //     }
-//     // }
-// }
-// createBtns()
-
-
- 
-
-
-
-
-
-//////////////////randomized questions for each value///////////////////
-
-
-const square = document.querySelectorAll('.squ1');
-
-square.forEach((square) => {
-	square.addEventListener('click', handleClickQues);
+createBtns()
+/******////////////randomized questions for each value////////////////****** */
+const square1 = document.querySelectorAll('.squ1'); 
+square1.forEach((square1) => {
+	square1.addEventListener('click', handleClickQues);
 });
 function handleClickQues(event) {
     fetch(`http://www.jservice.io/api/clues?value=100`)
@@ -78,35 +40,79 @@ function handleClickQues(event) {
 				return res.json();
 			})
 			.then((res) => {
-
-                let quest = res[Math.floor(Math.random() * Math.floor(max))].question
-                square.innerText = quest
-               console.log(quest)
+////////////////////////cant figure out how to target answer//////////
+////////////////////and print out in boxes////////////////
+             console.log(res[Math.floor(Math.random()* Math.floor(max))].question) 
+			})
+			.catch((error) => {
+				console.log(error);
+			}); 
+};
+///////////////////////////////////////////////////////////////////////////////
+const square2 = document.querySelectorAll('.squ2'); 
+square2.forEach((square2) => {
+	square2.addEventListener('click', handleClickQues);
+});
+function handleClickQues(event) {
+    fetch(`http://www.jservice.io/api/clues?value=200`)
+			.then((res) => {
+				return res.json();
+			})
+			.then((res) => {
+             console.log(res[Math.floor(Math.random()* Math.floor(max))].question) 
 			})
 			.catch((error) => {
 				console.log(error);
 			});
-    
 };
-handleClickQues()
-
-
-
-
-//////////////////////////////////////////////////////////////
-                
-                // let noBtn = document.createElement('button');
-                // button.className = "options"
-                // // noBtn.className = "options"
-                // button.innerText = "YES"
-                // // noBtn.innerText = "NO"
-                // square.appendChild(button)
-                // document.body.appendChild(square)
-				// const increment = parseInt(event.target.dataset.increment);
-				// if (event.target.classList.contains('squ1')){
-                    
-                //     score+= increment;
-                //    if (score ){
-
-                //    }
-                // }
+///////////////////////////////////////////////////////////////////////////////
+const square3 = document.querySelectorAll('.squ3'); 
+square3.forEach((square3) => {
+	square3.addEventListener('click', handleClickQues);
+});
+function handleClickQues(event) {
+    fetch(`http://www.jservice.io/api/clues?value=300`)
+			.then((res) => {
+				return res.json();
+			})
+			.then((res) => {
+             console.log(res[Math.floor(Math.random()* Math.floor(max))].question)           
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+};
+//////////////////////////////////////////////////////////////////////////////
+const square4 = document.querySelectorAll('.squ4'); 
+square4.forEach((square4) => {
+	square4.addEventListener('click', handleClickQues);
+});
+function handleClickQues(event) {
+    fetch(`http://www.jservice.io/api/clues?value=400`)
+			.then((res) => {
+				return res.json();
+			})
+			.then((res) => {
+             console.log(res[Math.floor(Math.random()* Math.floor(max))].question) 
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+};
+////////////////////////////////////////////////////////////////////////////
+const square5 = document.querySelectorAll('.squ5'); 
+square5.forEach((square5) => {
+	square5.addEventListener('click', handleClickQues);
+});
+function handleClickQues(event) {
+    fetch(`http://www.jservice.io/api/clues?value=500`)
+			.then((res) => {
+				return res.json();
+			})
+			.then((res) => {
+             console.log(res[Math.floor(Math.random()* Math.floor(max))].question) 
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+};
