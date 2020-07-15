@@ -1,108 +1,112 @@
-
-
-const square = document.querySelectorAll('.square');
-
-
-// square.forEach(square =>{
-//     square.addEventListener('click', handleClick);
-
-
-// });
-        //   let button = document.createElement('button');
-        //     let moneybtn = document.querySelectorAll('.square');
-        //     console.log(moneybtn);
-        //     moneybtn.appendChild(button);
-        //     document.body.appendChild(button);
-        //     button.innerHTML = 'hello';
+let startScore = 0
+const max = 100
 
 
 
-// filter out categories for the top/////////////////////////
 
-// function handleClick(event) {
-//     fetch('http://www.jservice.io/api/clues?categories?count=100')
+// const category = document.querySelectorAll('.category');
+// category.forEach(category => {
+//     category.addEventListener('click', handleClickCat )
+// })
+    
+// function handleClickCat(event) {
+//     fetch('http://www.jservice.io/api/categories?count=100')
 // 			.then((res) => {
 // 				return res.json();
 // 			})
 // 			.then((res) => {
-//                 console.log(res[0].category.ti);
-
-//             let button = document.createElement('button');
+// //////////////////////////Randomized the categories///////////////////////
+//   /////////////////////////dont know how to print out in boxes/////////
             
-//             let moneybtn = document.querySelector('.square');
-//             console.log(moneybtn);
-//             moneybtn.appendChild(button);
-//             document.body.appendChild(button);
-
-//             button.innerHTML = 'hello';
-
+//                 let userinput = 6
+                
+//                 for (let i=0; i<userinput; i++){
+//                     // console.log(res[Math.floor(Math.random()*Math.floor(max))])
+//                     category.innerText = res[Math.floor(Math.random()*Math.floor(max))];
+//                 }
 // 			})
 // 			.catch((error) => {
 // 				console.log(error);
 // 			});
     
 // };
-////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 
 
 
-const category = document.querySelectorAll('.category');
-category.forEach(category => {
-    category.addEventListener('click', handleClickCat )
-})
-    
+// function createBtns() {
 
-function handleClickCat(event) {
-    fetch('http://www.jservice.io/api/categories?count=100')
+// 	let yesBtn = document.createElement('button');
+//     let noBtn = document.createElement('button');
+//     yesBtn.className = 'choices'
+//     noBtn.className = 'choices'
+// 	yesBtn.appendChild(document.createTextNode('Yes!'));
+//     noBtn.appendChild(document.createTextNode('No...'));
+//     let page = document.querySelector('.square');
+   
+// 	page.appendChild(yesBtn);
+//     page.appendChild(noBtn);
+//     // let x = document.querySelector('choices').addEventListener('click', myfunc)
+// 	// function myfunc(){
+//     //     if (x.style.display === 'none'){
+//     //         x.style.display = 'block'
+//     //     }else {
+//     //         x.style.display = 'none'
+//     //     }
+//     // }
+// }
+// createBtns()
+
+
+ 
+
+
+
+
+
+//////////////////randomized questions for each value///////////////////
+
+
+const square = document.querySelectorAll('.squ1');
+
+square.forEach((square) => {
+	square.addEventListener('click', handleClickQues);
+});
+function handleClickQues(event) {
+    fetch(`http://www.jservice.io/api/clues?value=100`)
 			.then((res) => {
 				return res.json();
 			})
 			.then((res) => {
-                ////////////Randomized the categories/////////////
-                ////////////dont know how to print out in boxes/////////
-                const max = 100
-                let userinput = 6
-                
-                for (let i=0; i<userinput; i++){
-                    // console.log(res[Math.floor(Math.random()*Math.floor(max))])
-                    category.innerText = res[Math.floor(Math.random()*Math.floor(max))];
-                }
 
+                let quest = res[Math.floor(Math.random() * Math.floor(max))].question
+                square.innerText = quest
+               console.log(quest)
 			})
 			.catch((error) => {
 				console.log(error);
 			});
     
 };
+handleClickQues()
 
 
-// randomizing the output is good but repeating the numbers is a problem. /////
-
-// function handleClick(event) {
-//     fetch('http://www.jservice.io/api/clues?categories?count=100')
-// 			.then((res) => {
-// 				return res.json();
-// 			})
-// 			.then((res) => {
-//                 console.log(res[Math.floor(Math.random()*Math.floor(max))].category);
-
-// 			})
-// 			.catch((error) => {
-// 				console.log(error);
-// 			});
-    
-// };
 
 
 //////////////////////////////////////////////////////////////
+                
+                // let noBtn = document.createElement('button');
+                // button.className = "options"
+                // // noBtn.className = "options"
+                // button.innerText = "YES"
+                // // noBtn.innerText = "NO"
+                // square.appendChild(button)
+                // document.body.appendChild(square)
+				// const increment = parseInt(event.target.dataset.increment);
+				// if (event.target.classList.contains('squ1')){
+                    
+                //     score+= increment;
+                //    if (score ){
 
-
-
-    
-
-
-
-
-// category.forEach(category => {
-//     category.addEventListener('click', )
-// })
+                //    }
+                // }
