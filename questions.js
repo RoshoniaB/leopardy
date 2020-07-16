@@ -1,6 +1,6 @@
 const max = 100; 
 function handleClickQues() {
-	fetch(`http://www.jservice.io/api/clues?value=100`)
+	fetch(`https://www.jservice.io/api/clues?value=100`)
 		.then((res) => {
 			return res.json();
 		})
@@ -31,7 +31,7 @@ function handleClickQues() {
 handleClickQues()
 ///////////////////////////////////////////////////////////////////////////////
 function handleClickQues() {
-	fetch(`http://www.jservice.io/api/clues?value=200`)
+	fetch(`https://www.jservice.io/api/clues?value=200`)
 		.then((res) => {
 			return res.json();
 		})
@@ -60,7 +60,7 @@ function handleClickQues() {
 }
 // ///////////////////////////////////////////////////////////////////////////////
 function handleClickQues() {
-	fetch(`http://www.jservice.io/api/clues?value=300`)
+	fetch(`https://www.jservice.io/api/clues?value=300`)
 		.then((res) => {
 			return res.json();
 		})
@@ -89,7 +89,7 @@ function handleClickQues() {
 }
 ////////////////////////////////////////////////////////////////////////////
 function handleClickQues() {
-	fetch(`http://www.jservice.io/api/clues?value=400`)
+	fetch(`https://www.jservice.io/api/clues?value=400`)
 		.then((res) => {
 			return res.json();
 		})
@@ -118,7 +118,7 @@ function handleClickQues() {
 }
 // ////////////////////////////////////////////////////////////////////////////
 function handleClickQues() {
-	fetch(`http://www.jservice.io/api/clues?value=500`)
+	fetch(`https://www.jservice.io/api/clues?value=500`)
 		.then((res) => {
 			return res.json();
 		})
