@@ -11,5 +11,8 @@ function handleIWon(event) {
 			console.log(event.target);
 			startScore += increment;
 			score.innerText = startScore;
+			if (startScore <= 1000) {
+				document.body.classList.add('game-over');
+			}
 		}
 }
