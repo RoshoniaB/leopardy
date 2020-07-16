@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leopardy</title>
+    <title>Random Jeopardy!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-train-station.css">
 </head>
 <body>
     <header class="gameheader">
-        <h1 class="greeting">Welcome to Leopardy!</h1>
-        <!-- <h3 class="team score">Team 1</h3>
-        <h3 class="team score">Team 2</h3> -->
+        <h1 class="greeting">Welcome to Random Jeopardy!!</h1>
+       
+        <div class="odometer-div">
+        <div id="odometerComputer" class="odometer">0</div>
+        <div class="small-divider"></div>
+        <div id="odometerPlayer" class="odometer">0</div>
+        <br>
+        <label for="odometerComputer">Team 1</label>
+        <div class="large-divider"></div>
+        <label for="odometerPlayer">Team 2<label>
+        </div>
     </header>
     <br>
     <main class="gameboard" id="arena">
+       
         <div class="squ1 square" data-increment="100"><a href="questions.html">$100</a>
             <button class="choices"style=Display:none>Yes!</button>
             <button class="choices"style=Display:none>No...</button>
@@ -136,6 +146,7 @@
         </div>
     </main>
     <script src="app.js"></script>
+    <script type="text/javascript" src="http://github.hubspot.com/odometer/odometer.js">
     <!-- <script src="questions.js"></script> -->
 </body>
 </html>
