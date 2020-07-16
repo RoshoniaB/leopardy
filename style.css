@@ -1,26 +1,25 @@
 .gameboard {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    height: 70vmin;
-    width: 125vmin;
-    position: relative;
+    height: 35vmin;
+    width: 150vmin;
+    /* position: relative; */
     left: 35px;
     font-family: Geneva,Verdana, Tahoma, sans-serif;
+    
 }
 a {
     text-decoration: #312f2f;
     color: #ebecec;
+    padding: 10px;
 }
 .square {
     border: #fcfcfc 8px solid;
     margin-bottom: -1px;
     margin-right: -1px;
-     display: block;
     text-align: center; 
-    font-size: 75px;
-    align-items: center;
+    font-size: 60px;
     background-color: #312f2f;
-   
 }
 .square:hover{
     background-color: rgb(7, 10, 175);
@@ -31,11 +30,13 @@ a {
     color: #ebecec;
     font-family: Geneva,Verdana, Tahoma, sans-serif;
 }
-
-.button {
-    background-color: blue;
+.btn{
+    font-size: 30px;
+    color: #ebecec;
 }
- 
+.btn:hover {
+color: rgb(255, 255, 6);
+} 
 body {
    background-color: #cfc8c8
 }
@@ -44,27 +45,14 @@ body {
     font-size: 30px;
     background-color:none;
 }
-.team {
-    text-align: right;
-    color:  rgba(16, 14, 168, 0.904);
-}
 
-.button {
-    display: none;
-}
+
 .show-answer {
     bottom: 100px;
     
 }
-
 .score {
     color: #312f2f;
     position: relative;
-}
-.team2 {
-    left: 175vmin;
-    bottom: 80px;
-}
-.team1 {
-    left: 100px;
+    display: inline;
 }

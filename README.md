@@ -28,3 +28,4 @@ The app is simple to get up and running. Click [here](http://www.quora.com/Adam-
 * [Tucker Brock](http://www.tuckerrosebrock.com)
 * [w3schools](www.w3schools.com)
 * [programminghelporg](https://www.youtube.com/watch?v=9u2LrHP1FuU)
+* Team 622 was a big help. Thank you!

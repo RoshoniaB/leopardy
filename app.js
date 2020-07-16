@@ -1,34 +1,19 @@
-let startScore = 0
 
-// const page = document.querySelector('div');
-// page.addEventListener('click', createBtns)
-
-// let scoreEle = document.querySelectorAll('.score')
-// scoreEle.textContent = startScore
-
-// //////////////////cant add a button to each div///////////////////
-
-// function createBtns() {
+const square = document.querySelector('.square');
+const score = document.querySelector('.score');
+let startScore = 0;
     
-// // 	let yesBtn = document.createElement('button');
-// //     let noBtn = document.createElement('button');
-// //     yesBtn.className = 'choices'
-// //     noBtn.className = 'choices'
-// //     // yesBtn.style='display:none;'
-// //     // noBtn.style='display:none;'
-// // 	yesBtn.appendChild(document.createTextNode('Yes!'));
-// //     noBtn.appendChild(document.createTextNode('No...'));
-// // 		page.appendChild(yesBtn);
-// //             page.appendChild(noBtn);	
-//             scoreEle.textContent = ++startScore
-// //    for(let i=0; i<page;i++){
-// //         console.log(page[i])
-// //        list = updatediv(page[i].innerHTML);
-// //        page[i].innerHTML = list
-// //     }   
-// }    
+square.addEventListener('click', handleIWon);
+    
 
-// createBtns()
-
-const square = document.querySelectorAll('.square')
-const oudometer = document.querySelector
+function handleIWon(event) {
+    const increment = parseInt(event.target.dataset.increment);
+    if (event.target.classList.contains('btn')) {
+			console.log(event.target);
+			startScore += increment;
+			score.innerText = startScore;
+			// if (startScore >= 1000) {
+			// 	document.body.classList.add('game-over');
+			// }
+		}
+}
