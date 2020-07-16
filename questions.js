@@ -58,6 +58,7 @@ function handleClickQues(event) {
 			console.log(error);
 		});
 }
+handleClickQues();
 // ///////////////////////////////////////////////////////////////////////////////
 function handleClickQues(event) {
 	fetch(`http://www.jservice.io/api/clues?value=300`)
@@ -87,6 +88,7 @@ function handleClickQues(event) {
 			console.log(error);
 		});
 }
+handleClickQues();
 ////////////////////////////////////////////////////////////////////////////
 function handleClickQues(event) {
 	fetch(`http://www.jservice.io/api/clues?value=400`)
@@ -116,6 +118,7 @@ function handleClickQues(event) {
 			console.log(error);
 		});
 }
+handleClickQues();
 // ////////////////////////////////////////////////////////////////////////////
 function handleClickQues(event) {
 	fetch(`http://www.jservice.io/api/clues?value=500`)
@@ -145,3 +148,4 @@ function handleClickQues(event) {
 			console.log(error);
 		});
 }
+handleClickQues();
