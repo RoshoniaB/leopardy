@@ -57,17 +57,14 @@ body {
     
 }
 
-.odometer {
-    font-size: 100px;
+.score {
+    color: #312f2f;
+    position: relative;
 }
-
-.odometer-div {
-  text-align: right;
-  position: absolute;
-  right: 2%;
-  top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: Geneva,Verdana, Tahoma, sans-serif;
-  font-size: 25px;
+.team2 {
+    left: 175vmin;
+    bottom: 80px;
+}
+.team1 {
+    left: 100px;
 }
