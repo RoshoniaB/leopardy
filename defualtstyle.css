@@ -3,11 +3,11 @@
     width: 125vmin;
     border: #1a6cca 4px solid;
     color:rgba(16, 14, 168, 0.904);
-    text-align: center;
     background-color: rgba(54, 108, 189, 1);
     font-size: 50px;
-    text-align: center;
-    position: fixed;
+    position: relative;
+    left: 100px;
+    
 }
 
 .greeting {
@@ -22,11 +22,13 @@ body {
 .gameheader {
     font-size: 25px;
     background-color: #1a6cca;
-    
+    position: relative;
+    width: 125vmin;
+    left: 100px;
 }
-.team {
+/* .team {
     text-align: right;
-}
+} */
 
 p {
     color:rgba(16, 14, 168, 0.904);
@@ -37,4 +39,24 @@ p {
 
 .hide {
     display: none;
+}
+
+.next {
+    position: relative;
+    bottom: -500px;
+}
+
+.show-answer {
+    position: relative;
+    bottom: -10px;
+
+}
+.quest {
+   position: relative;
+   top: -100px;  
+   text-align: center;  
+}
+.ans {
+    position: relative;
+    text-align: center;
 }
