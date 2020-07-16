@@ -4,7 +4,7 @@ This app is called Random Jeopardy. It's a game app for players who enjoy Jeopar
 
 ## Getting Started
 
-The app is simple to get up and running. Click [here](http://www.quora.com/Adam-DAngelo) for the link or you can find it on the right side of this page.
+The app is simple to get up and running. Click [here](https://roshoniab.github.io/leopardy/.) for the link or you can find it on the right side of this page.
 
 #### MVP Goals
 
