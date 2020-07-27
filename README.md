@@ -16,7 +16,7 @@ The app is simple to get up and running. Click [here](http://www.quora.com/Adam-
 ## Built With
 
 * [VS Code](https://code.visualstudio.com/) - The code editor used
-* [ jQuery](https://jquery.com/) - The web framework used
+* [jQuery](https://jquery.com/) - The web framework used
 * [Node.js](https://nodejs.org/en/) - Another web framework used 
 
 ## Author
