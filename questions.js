@@ -28,7 +28,7 @@ function handleClickQues(event) {
 			console.log(error);
 		});
 }
-handleClickQues()
+
 function handleClickQues(event) {
 	fetch(`https://www.jservice.io/api/clues?value=200`)
 		.then((res) => {
