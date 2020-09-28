@@ -1,0 +1,83 @@
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    padding: 1rem 1rem 1rem;
+    left: 8%;
+}
+a {
+    text-decoration: #312f2f;
+    color: #ebecec;
+    padding: 10px;
+}
+.square {
+    border: #fcfcfc 8px solid;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    text-align: center;
+    font-size: 60px;
+    background-color: #312f2f;
+}
+.square:hover {
+    background-color: rgb(7, 10, 175);
+    font-weight: bold;
+}
+.greeting {
+    text-align: center;
+    color: #ebecec;
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+}
+.btn {
+    font-size: 30px;
+    color: #ebecec;
+}
+.btn:hover {
+    color: rgb(255, 255, 6);
+}
+body {
+    background-color: #cfc8c8;
+}
+
+.gameheader {
+    font-size: 30px;
+    background-color: none;
+}
+
+.show-answer {
+    bottom: 100px;
+}
+.score {
+    color: #312f2f;
+    position: relative;
+    display: inline;
+    left: 4%;
+}
+@media (max-width: 600px) {
+    .greeting {
+        text-align: center;
+        color: #ebecec;
+        font-family: Geneva, Verdana, Tahoma, sans-serif;
+        font-size: 100%;
+    }
+    .gameboard {
+        display: inline;
+        position: relative;
+        font-family: Geneva, Verdana, Tahoma, sans-serif;
+    }
+    .square {
+        font-size: 300%;
+        position: relative;
+        padding: 8% 8% 8% 8%;
+        height: 40vw;
+        width: 55vw;
+    }
+    a {
+        text-decoration: #312f2f;
+        color: #ebecec;
+        padding: 2%;
+    }
+    .btn {
+    font-size: 55%;
+}
+}

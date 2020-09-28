@@ -1,0 +1,90 @@
+.gameboard {
+	border: #fcfcfc 8px solid;
+	color: rgba(16, 14, 168, 0.904);
+	background-color: #0f0e0e;
+	font-size: 50px;
+	position: absolute;
+	font-family: Geneva, Verdana, Tahoma, sans-serif;
+}
+a {
+	text-decoration: none;
+	text-decoration: #312f2f;
+	color: #ebecec;
+}
+
+.greeting {
+	text-align: center;
+	color: #ebecec;
+}
+body {
+	background-color: #cfc8c8;
+}
+.gameheader {
+	background-color: none;
+	font-size: 30px;
+}
+p {
+	color: #ebecec;
+	text-align: center;
+	text-decoration: none;
+	position: fixed;
+}
+.hide {
+	display: none;
+}
+.next {
+	position: relative;
+    top: 22rem;
+    font-size: 2rem;
+}
+.show-answer {
+	position: relative;
+	bottom: -10px;
+	font-size: 25px;
+	text-decoration: none;
+	background-color: white;
+	border: none;
+}
+.show-answer:hover {
+	background-color: rgb(7, 10, 175);
+	font-weight: bold;
+}
+.quest {
+	position: relative;
+	top: -100px;
+	text-align: center;
+}
+.ans {
+	position: relative;
+	text-align: center;
+}
+@media (max-width: 600px) {
+	.greeting {
+        text-align: center;
+        font-size: 100%;
+        position: relative;
+	}
+	.gameboard {
+		font-size: 115%;
+		position: relative;
+        padding: 1% 1% 1% 1%;
+    }
+	.show-answer {
+		position: relative;
+		font-size: 100%;
+    }
+    .quest {
+	position: relative;
+	top: 1%;
+	text-align: center;
+}
+    .ans {
+	position: relative;
+    text-align: center;
+    top: 15%;
+}
+	.next {
+		position: relative;
+		
+	}
+}
